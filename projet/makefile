@@ -1,2 +1,3 @@
-test: main.f95
-		gfortran main.f95 -o test
+
+test: main.f90
+		mpif90 main.f90 -o test
