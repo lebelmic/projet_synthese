@@ -33,7 +33,7 @@ if ( rank == 0 ) then
 
     write ( *, '(a,i1,a,g14.6)' ) 'P:', rank, ' buf(5) = ', buf(5)
 
- else if ( rank == 1 ) then
+else if ( rank == 1 ) then
  
     write ( *, '(a)' ) ' '
     write ( *, '(a,i1,a)' ) 'P:', rank, &
@@ -47,7 +47,7 @@ if ( rank == 0 ) then
     tag = 55
     call MPI_Send ( all_data, 100, MPI_INT, dest, tag, MPI_COMM_WORLD, ierr )
   
-  else
+else
 
     write ( *, '(a)' ) ' '
     write ( *, '(a,i1,a)' ) 'P:', rank, ' - MPI has no work for me!'
