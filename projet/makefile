@@ -1,3 +1,9 @@
 
-test: main.f90
-		mpif90 main.f90 -o test
+all: exemple-1.x  exemple-2.x
+
+%.x: %.f90
+	mpif90 $^ -o $@
+
+clean:
+	rm *.x
+
