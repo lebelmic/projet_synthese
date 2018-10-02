@@ -1,3 +1,4 @@
+*.x
 *.cpb
 *.o
 .DS_Store
