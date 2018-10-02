@@ -40,7 +40,8 @@ big_array = 0
 
 !Create the file for hdf5
 call h5open_f(ierr)
-call h5fcreate_f(filename, H5F_ACC_TRUC_F, file_id, ierr)
+call h5fcreate_f(filename, H5F_ACC_TRUNC_F, file_id, ierr)
+
 
 
 !Each process creates his row
